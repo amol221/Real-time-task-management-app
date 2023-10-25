@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Including Bootstrap CSS for styling and responsiveness -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<section style="background-color: #2e3238; width:100%;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+            <h3 class="mb-5">Oops! An Error Occurred</h3>
+            <p>{{ error }}</p>
+            <hr class="my-4">
+            <!-- Navigate to login and register page -->
+            <a href="{{ url_for('login') }}" class="btn btn-primary" style="background-color: #2e3238;">Login</a>
+            <a href="{{ url_for('register') }}" class="btn btn-secondary">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
