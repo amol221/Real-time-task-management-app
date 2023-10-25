@@ -6,7 +6,7 @@ This platform enables users to add, edit, and delete tasks.
 Installation:
 To set up the project locally, follow these steps:
 Clone the repository:
-git clone https://github.com/your-username/real-time-task-management-app.git
+git clone https://github.com/amol221/Real-time-task-management-app.git
 Navigate to the project directory:
 cd real-time-task-management-app
 
